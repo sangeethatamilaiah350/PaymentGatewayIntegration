@@ -1,231 +1,211 @@
 
+.part1{
+  
+  position: relative;
+  
+  
+}
+.head{
+  position: absolute;
+  left:220px ;
+  top: 50px;
+  transform: translate(-50%, -50%);
+  
+  
+  height:40px;
+  align-items: center;
+  
+}
 .img{
-height:732px;;
-width:100%;
-position:relative;
+ height:750px;
+ width:100%;
+}
+.nav{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.item{
+  border-radius: 12px;
+}
+.item:hover{
+  cursor:pointer;
+  background-color:rgb(83, 75, 75);
+  color:transparent;
+  text-decoration: none;
 }
 .quotes{
-    color:#ffffff;
-    top:20%;
-    left:30%;
-    position:absolute;
+  position: absolute;
+  top: 180px;
+  left: 260px;
+  
 }
 .secondline{
-    top:27%;
-    left:30%;
-    position:absolute;
-    font-family:courier;
+  position: absolute;
+  top: 250px;
+  left: 260px;
+ }
+ .donateoption{
+   display:flex;
+   flex-direction: column;
+   position:absolute;
+   top:350px;
+   left:260px;
+ }
+ .button {
+  
 
+  border-radius: 4px;
+  background-color:white;
+  border: none;
+  color: #110c0c;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius:12px;
 }
 
-.button {
-    top:40%;
-    left:40%;
-    position:absolute;
-    border-radius: 4px;
-    background-color:white;
-    border: none;
-    color: #110c0c;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    border-radius:12px;
-  }
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.part2{
   
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
   
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover span {
-    padding-right: 25px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-  .nav{
-      top:5%;
-      left:80%;
-      position:absolute;
-      display:flex;
-      color:#fdfbfb;
-      gap:15px;
-      
-      
-  }
+  display:flex;
+  flex-direction: column;
+  background-color:hsl(331, 70%, 85%);
+  align-items:center;
+  width:100%;
+ align-items:center;
+ justify-content: center;
+ flex-wrap: wrap;
  
-  .head{
-      top:2%;
-      left:5%;
-      position:absolute;
-      color:#ffffff;
-  }
-  .item:hover{
-    cursor:pointer;
-    background-color:black;
-    color:white;
-    text-decoration: none;
-    
-  }
-  .item{
-    border-radius: 12px;
-  }
-  .part2{
-      display:flex;
-      align-items:center;
-      flex-direction:column;
-      gap:5px;
-      
-  }
-  .sub1{
-      
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       
-       
-       text-align: center; 
-    
-       width:100%;
-        
-       align-items: center; 
+ gap:10px;
+
 }
-.sub2{
-    
-    display:flex;
-    width:80%;
-    
-    height:300px;
-    justify-content:space-around;
-    
-    
+.provide{
+    height:40px;
+    align-items: center;
+    width:100%;
+    text-align: center;
+  
+  
 }
-.one{
-    background-color: #a58383;
-    width:400px;
-    border-radius: 80%;
-    text-align: center; 
-    
-    
-    
+.amount{
+  display:flex;
+  flex-direction:row;
+  gap:30px;
+  
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  
 }
-.two{
-    background-color: #a58383;
-    width:400px;
-    text-align: center; 
-    border-radius: 80%;
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  height: 200px;
+  border-radius:30%;
+  flex: 0 1 auto;
+  
+ 
 }
-.three{
-    background-color: #a58383;
-    width:400px;
-    text-align: center; 
-    border-radius: 80%;
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-a{
-    text-decoration: none;
-    
+
+.container {
+  padding: 2px 16px;
+  
+}
+.whos{
+  height:200px;
+  width:200px;
+}
+.women{
+  height:100px;
+  width:100px;
+}
+.part3{
+  display:flex;
+  background-color:hsl(331, 70%, 85%);
 }
 .footer{
-    width:100%;
-    background-color:rgb(83, 74, 74);
-    height:200px;
-    display:flex;
-    
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
+  bottom:0px;
 }
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 23px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius:50%;
-    
-  }
+  padding: 20px;
+  font-size: 30px;
+  width: 23px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:50%;
   
-  .fa:hover {
-      opacity: 0.7;
-  }
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.footer{
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  background-color: rgba(12, 11, 11, 0.466);
+}
+.whocontent{
   
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  .fa-google {
-    background: #dd4b39;
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  .fa-pinterest {
-    background: #cb2027;
-    color: white;
-  }
-  .contact{
-      top:25%;
-      left:25%;
-  }
-  
-  .donatebutton{
-    top:55%;
-    left:41%;
-    position:absolute;
-    
-  }
-  .who{
-    width:50%;
-  }
-  .whocontent{
-    top:200%;
-    left:50%;
-    position:absolute;
-  }
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 220px;
-    height:300px;
-    border-radius:200px;;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container {
-    padding: 2px 16px;
-  }
-  .women{
-    height:200px;
-    width:200px;
-  }
-  
+  display:flex;
+  flex-direction:column;
+}
